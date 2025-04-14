@@ -1,40 +1,40 @@
 <form [formGroup]="reservationForm" (ngSubmit)="Onsubmit()" >
     <div>
         <label>Check in Date:</label>
-        <input type="date" formControlName="checkindate">
-        <div *ngIf="reservationForm.get('checkindate')?.invalid && reservationForm.get('checkindate')?.touched">
+        <input type="date" formControlName="CheckInDate">
+        <div *ngIf="reservationForm.get('CheckInDate')?.invalid && reservationForm.get('CheckInDate')?.touched">
             Select your check-in to unlock your stay.
         </div>
     </div>
 
     <div>
         <label>Check out Date:</label>
-        <input type="date" formControlName="checkoutdate">
-        <div *ngIf="reservationForm.get('checkoutdate')?.invalid && reservationForm.get('checkoutdate')?.touched">
+        <input type="date" formControlName="CheckOutDate">
+        <div *ngIf="reservationForm.get('CheckOutDate')?.invalid && reservationForm.get('CheckOutDate')?.touched">
             Select your check-out to complete your journey.
         </div>
     </div>
 
     <div>
         <label>Guest name</label>
-        <input type="text" formControlName="guestname">
-        <div *ngIf="reservationForm.get('guestname')?.invalid && reservationForm.get('guestname')?.touched">
+        <input type="text" formControlName="GuestName">
+        <div *ngIf="reservationForm.get('GuestName')?.invalid && reservationForm.get('GuestName')?.touched">
             Kindly enter the guest's full name.
         </div>
     </div>
 
     <div>
         <label>Room number</label>
-        <input type="number" formControlName="roomnumber">
-        <div *ngIf="reservationForm.get('roomnumber')?.invalid && reservationForm.get('roomnumber')?.touched">
+        <input type="number" formControlName="RoomNumber">
+        <div *ngIf="reservationForm.get('RoomNumber')?.invalid && reservationForm.get('RoomNumber')?.touched">
             Please provide the room number
         </div>
     </div>
 
     <div>
         <label>guest email</label>
-        <input type="email" formControlName="guestemail">
-        <div *ngIf="reservationForm.get('guestemail')?.invalid && reservationForm.get('guestemail')?.touched">
+        <input type="email" formControlName="GuestEmail">
+        <div *ngIf="reservationForm.get('GuestEmail')?.invalid && reservationForm.get('GuestEmail')?.touched">
             Drop your email so we can keep in touch!
         </div>
     </div>
