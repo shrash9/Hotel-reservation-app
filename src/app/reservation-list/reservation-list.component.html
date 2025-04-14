@@ -7,9 +7,11 @@
         Room : {{reservation.RoomNumber}} <br>
         Check-in : {{reservation.CheckInDate}} <br>
         Check-out : {{reservation.CheckOutDate}} <br>
+        <button (click)="deleteReservation(reservation.id)">Delete</button>
     </li>
 </ul>
 
 <ng-template #noReservation> 
     No reservation available!
 </ng-template>
+

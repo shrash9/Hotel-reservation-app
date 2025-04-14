@@ -18,11 +18,11 @@ export class ReservationFormComponent implements OnInit{
 
   ngOnInit(): void {
     this.reservationForm = this.formBuilder.group({
-      checkindate: ['',Validators.required],
-      checkoutdate: ['',Validators.required],
-      guestname: ['', Validators.required],
-      guestemail : ['', [Validators.required, Validators.email]],
-      roomnumber : ['',Validators.required]
+      CheckInDate: ['',Validators.required],
+      CheckOutDate: ['',Validators.required],
+      GuestName: ['', Validators.required],
+      GuestEmail : ['', [Validators.required, Validators.email]],
+      RoomNumber : ['',Validators.required]
     })
   }
 
